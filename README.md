@@ -1,15 +1,29 @@
 # SudokuGame
 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+
 A high-performance, stateless Web Sudoku game with a native C++ puzzle generator!
 
-This project offloads complex puzzle generation to a highly optimized C++ backend while delivering a buttery-smooth, modern user interface in React. 
+> **[Play it Live Here!]** *(Replace this with your future Vercel/GitHub Pages link!)*
+
+<!-- PLACEHOLDER FOR SCREENSHOT: Un-comment the line below and add your image link once you take a screenshot -->
+<!-- ![Sudoku Gameplay](./screenshot.png) -->
+
+This project offloads complex puzzle generation to a highly optimized C++ backend while delivering a smooth, modern user interface in React.
 
 ## Features
 
-- **Blazing Fast Generation**: Uses recursive backtracking in C++ to instantly generate uniquely solvable Sudoku boards with variable difficulty.
+- **Fast Generation**: Uses recursive backtracking in C++ to instantly generate uniquely solvable Sudoku boards with variable difficulty.
 - **Stateless Sharing**: Share puzzles instantly without a database! The board state is compactly encoded directly into the URL hash.
-- **Modern UI**: A clean, responsive grid featuring "Pen" and "Notes" modes for pencil marks.
-- **Smart Highlighting**: Automatically highlights rows, columns, 3x3 boxes, and matching numbers when a cell is selected.
+- **Clean UI**: A clean, responsive grid featuring "Pen" and "Notes" modes for pencil marks.
+- **Highlighting**: Automatically highlights rows, columns, 3x3 boxes, and matching numbers when a cell is selected.
+
+## How the Magic Works 🪄
+
+To achieve **database-free sharing**, the game state is translated into an 81-character string representing the 9x9 grid (where `0` is an empty cell and `1-9` are given numbers). When you click "Share", this string is appended to your URL (e.g., `#/game?code=530070000...`). 
+When a friend opens your link, the React frontend simply reads this code, decodes it back into a 2D array, and instantly reconstructs the exact same puzzle for them to play!
 
 ## Architecture
 
