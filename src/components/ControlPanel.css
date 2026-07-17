@@ -1,0 +1,117 @@
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .control-panel {
+    max-width: 300px;
+  }
+}
+
+.btn-num {
+  background: var(--cell-bg);
+  border: 1px solid var(--cell-border);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.btn-num:hover, .btn-num:active {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,82,204,0.2);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-action {
+  background: var(--cell-bg);
+  border: 1px solid var(--cell-border);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+  background: #f8f9fa;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-action.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.btn-action.active:hover {
+  background: var(--primary-hover);
+  color: white;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--cell-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--cell-border);
+}
+
+.difficulty-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.difficulty-slider label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.difficulty-slider input {
+  width: 100%;
+}
+
+.btn-new-game {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-new-game:hover {
+  background: var(--primary-hover);
+}

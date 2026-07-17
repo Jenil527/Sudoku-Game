@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --bg-color: #f4f4f4;
+  --text-primary: #333;
+  --text-secondary: #666;
+  --grid-border: #333;
+  --cell-border: #ccc;
+  
+  --cell-bg: #fff;
+  --cell-bg-selected: #e2ebf3;
+  --cell-bg-related: #f0f5fa;
+  --cell-bg-same: #c3d7ea;
+  
+  --text-initial: #333;
+  --text-user: #0052cc;
+  
+  --primary-color: #0052cc;
+  --primary-hover: #0043a6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .game-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.loading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 50px;
+}
