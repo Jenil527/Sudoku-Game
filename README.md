@@ -2,7 +2,7 @@
 
 A high-performance, stateless Web Sudoku game with a native C++ puzzle generator!
 
-Inspired by the [Str8ts](https://github.com/daandtu/Str8ts) architecture, this project offloads complex puzzle generation to a highly optimized C++ backend while delivering a buttery-smooth, modern user interface in React. 
+This project offloads complex puzzle generation to a highly optimized C++ backend while delivering a buttery-smooth, modern user interface in React. 
 
 ## Features
 
