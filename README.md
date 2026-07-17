@@ -6,7 +6,7 @@
 
 A high-performance, stateless Web Sudoku game with a native C++ puzzle generator!
 
-> **[Play it Live Here!]** *(https://sudoku-game-xi-swart.vercel.app/)*
+> **[Play it Live Here!]** *(https://github.com/Jenil527/Sudoku-Game.git)*
 
 <!-- PLACEHOLDER FOR SCREENSHOT: Un-comment the line below and add your image link once you take a screenshot -->
 <!-- ![Sudoku Gameplay](./screenshot.png) -->
