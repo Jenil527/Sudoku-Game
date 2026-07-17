@@ -6,7 +6,7 @@
 
 A high-performance, stateless Web Sudoku game with a native C++ puzzle generator!
 
-> **[Play it Live Here!]** *(Replace this with your future Vercel/GitHub Pages link!)*
+> **[Play it Live Here!]** *(https://sudoku-game-xi-swart.vercel.app/)*
 
 <!-- PLACEHOLDER FOR SCREENSHOT: Un-comment the line below and add your image link once you take a screenshot -->
 <!-- ![Sudoku Gameplay](./screenshot.png) -->
@@ -61,7 +61,7 @@ Open a new terminal in the root of the project and run:
 npm install
 npm run dev
 ```
-The frontend will start on your local Vite port (usually `http://localhost:5173`). Open that URL in your browser to play!
+The frontend will start on your local Vite port (`http://localhost:5173`). Open that URL in your browser to play!
 
 ## License
 
